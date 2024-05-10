@@ -14,6 +14,7 @@ public class GreetingResource {
         return "Hello!"
         + "\this is version 1.0"
         + "\tI'm running in pod " + System.getenv("HOSTNAME")
-        + "\tI'm reachable via " +System.getenv("KUBERNETES_SERVICE_HOST");
+        + "\tI'm reachable via " +System.getenv("KUBERNETES_SERVICE_HOST")
+        + "\n";
     }
 }
