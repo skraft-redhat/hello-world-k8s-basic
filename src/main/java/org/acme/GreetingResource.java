@@ -12,7 +12,7 @@ public class GreetingResource {
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
         return "Hello!"
-        + "\tThis is version 1.1"
+        + "\tThis is version 1.2"
         + "\tI'm running in pod " + System.getenv("HOSTNAME")
         + "\tI'm reachable via " +System.getenv("KUBERNETES_SERVICE_HOST")
         + "\n";
