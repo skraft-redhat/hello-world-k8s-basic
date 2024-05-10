@@ -11,8 +11,9 @@ public class GreetingResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return "Hello!"
-        + "\tThis is version 1.8"
+        return "Hello world!"
+        + "\tCurrent time: " + java.time.LocalTime.now()
+        + "\tThis is version 1.0"
         + "\tI'm running in pod " + System.getenv("HOSTNAME")
         + "\tI'm reachable via " +System.getenv("KUBERNETES_SERVICE_HOST")
         + "\n";
