@@ -13,7 +13,7 @@ public class GreetingResource {
     public String hello() {
         return "Hello world!"
         + "\tCurrent time: " + java.time.LocalTime.now()
-        + "\tThis is version 1.1"
+        + "\tThis is version 1.2"
         + "\tI'm running in pod " + System.getenv("HOSTNAME")
         + "\tI'm reachable via " +System.getenv("KUBERNETES_SERVICE_HOST")
         + "\n";
